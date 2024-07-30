@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <platform name="Linux">
+        <description>
+            Configuration settings and instructions for running Dtrix on Linux.
+        </description>
+        <dependencies>
+            <package name="nmap" version="latest" />
+            <package name="netcat" version="latest" />
+            <package name="hydra" version="latest" />
+        </dependencies>
+        <installation>
+            <step>Install required packages using your package manager.</step>
+            <step>Clone the Dtrix repository from GitHub.</step>
+            <step>Navigate to the project directory and follow the build instructions in README.md.</step>
+        </installation>
+    </platform>
+</configuration>
