@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <platform name="Termux">
+        <description>
+            Configuration settings and instructions for running Dtrix on Termux.
+        </description>
+        <dependencies>
+            <package name="nmap" version="latest" />
+            <package name="netcat" version="latest" />
+            <package name="hydra" version="latest" />
+        </dependencies>
+        <installation>
+            <step>Install Termux on your Android device.</step>
+            <step>Update Termux packages using <code>pkg update</code>.</step>
+            <step>Install required packages using <code>pkg install nmap netcat hydra</code>.</step>
+            <step>Clone the Dtrix repository from GitHub.</step>
+            <step>Navigate to the project directory and follow the build instructions in README.md.</step>
+        </installation>
+    </platform>
+</configuration>
