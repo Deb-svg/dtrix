@@ -15,13 +15,13 @@ cd $(dirname $0)
 # Function for fake hacking simulation
 fake_hacking() {
     echo "Starting fake hacking simulation..."
-    cat fake_hacking/resources/fake_hack.txt
+    cat ../scripts/fake_hacking/resources/fake_hack.txt
 }
 
 # Function for matrix simulation
 matrix() {
     echo "Starting matrix simulation..."
-    cat matrix/resources/matrix.txt
+    cat ../scripts/matrix/resources/matrix.txt
 }
 
 # Main menu
