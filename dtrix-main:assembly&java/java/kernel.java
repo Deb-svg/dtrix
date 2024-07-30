@@ -5,13 +5,13 @@ public class Kernel {
         System.out.println("Welcome to Dtrix Fake Hacking Tool");
 
         // Initialize components
-        HackSimulator.initialize();
-        LogManager.initialize();
+        hacksimulator.initialize();
+        logmanager.initialize();
 
         // Example of running simulations
-        HackSimulator.runSimulation();
+        hacksimulator.runSimulation();
         
         // Log the activity
-        LogManager.log("Simulation completed.");
+        logmanager.log("Simulation completed.");
     }
 }
