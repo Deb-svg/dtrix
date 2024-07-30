@@ -8,8 +8,8 @@ pkg upgrade -y
 pkg install -y git python clang
 
 # Clone the dtrix repository
-git clone https://github.com/Deb-svg/dtrix-demo.git
-cd dtrix-demo
+git clone https://github.com/Deb-svg/dtrix.git
+cd dtrix
 
 # Setup the environment
 chmod +x dtrix-termux.sh
