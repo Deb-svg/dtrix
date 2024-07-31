@@ -80,9 +80,8 @@ make run-linux
 To delete the Dtrix directory and all its contents, follow these steps:
 
 ### Option 1: Normal Way
-1. **Make the file executable then execute it**
+1. **Execute the shell file**
    ```bash
-   chmod +x rmdtrix.sh
    ./rmdtrix.sh
    ```
 The `rmdtrix.sh` will be outside dtrix directory
@@ -90,8 +89,8 @@ The `rmdtrix.sh` will be outside dtrix directory
 ### Option 2: Create a Symbolic Link
 1. **Create a Symbolic Link**
    ```bash
-   ln -s $(pwd)/dtrix/delete_dtrix.sh /usr/local/bin/delete_dtrix
-   chmod +x /usr/local/bin/delete_dtrix
+   ln -s $(pwd)/dtrix/rmdtrix.sh /usr/local/bin/rmdtrix
+   chmod +x /usr/local/bin/rmdtrix
    ```
 2. **Run the Script**
    ```
