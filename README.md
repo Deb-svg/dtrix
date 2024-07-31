@@ -62,6 +62,13 @@ Dtrix is a fake hacking tool designed for educational and demonstration purposes
     ./tools-termux/termux-dtrix.cfg
     ```
 
+5. **Build and Install**
+
+    ```bash
+    make build
+    make install
+    ```
+
 ## Usage
 
 ### Running on Linux
