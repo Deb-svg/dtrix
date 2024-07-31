@@ -17,7 +17,7 @@ Dtrix is a fake hacking tool designed for educational and demonstration purposes
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/dtrix.git
+    git clone https://github.com/Deb-svg/dtrix.git
     cd dtrix
     ```
 
@@ -57,7 +57,7 @@ Dtrix is a fake hacking tool designed for educational and demonstration purposes
 4. **Clone the Repository and Install**
 
     ```bash
-    git clone https://github.com/yourusername/dtrix.git
+    git clone https://github.com/Deb-svg/dtrix.git
     cd dtrix
     ./tools-termux/termux-dtrix.cfg
     ```
@@ -74,6 +74,30 @@ make run-linux
 
 - **Linux**: Configuration file located at `tools-linux/linux_dtrix.cfg`.
 - **Termux**: Configuration file located at `tools-termux/termux_dtrix.cfg`.
+
+## Deletion
+
+To delete the Dtrix directory and all its contents, follow these steps:
+
+### Option 1: Normal Way
+1. **Make the file executable then execute it**
+   ```bash
+   chmod +x rmdtrix.sh
+   ./rmdtrix.sh
+   ```
+The `rmdtrix.sh` will be outside dtrix directory
+
+### Option 2: Create a Symbolic Link
+1. **Create a Symbolic Link**
+   ```bash
+   ln -s $(pwd)/dtrix/delete_dtrix.sh /usr/local/bin/delete_dtrix
+   chmod +x /usr/local/bin/delete_dtrix
+   ```
+2. **Run the Script**
+   ```
+   rmdtrix
+   ```
+You will be prompted to confirm the deletion.
 
 ## Contributing
 
