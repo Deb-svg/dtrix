@@ -4,8 +4,9 @@
 LINUX_DIR = tools-linux
 TERMUX_DIR = tools-termux
 BIN_DIR = bin
-LOG_FILE = dtrix_log.txt
 SRC_DIR = src
+FAKE_HACKING_DIR = scripts/fake_hacking
+MATRIX_DIR = scripts/matrix
 
 # Default target
 all: build
@@ -14,34 +15,32 @@ all: build
 build: 
 	@echo "Building Dtrix..."
 	@mkdir -p $(BIN_DIR)
-	@# Add your build commands here
-	@# For example, compiling Java or Swift code, or any other necessary steps
+	@# Copy necessary scripts to the bin directory
+	@cp $(FAKE_HACKING_DIR)/main.sh $(BIN_DIR)/fake_hacking.sh
+	@cp $(MATRIX_DIR)/main.sh $(BIN_DIR)/matrix.sh
 	@echo "Build completed."
 
 # Install target
 install: 
 	@echo "Installing Dtrix..."
 	@mkdir -p $(BIN_DIR)
-	@# Add your installation commands here
-	@# This might involve copying files, setting up configurations, etc.
+	@# Copy necessary scripts to the bin directory
+	@cp $(FAKE_HACKING_DIR)/main.sh $(BIN_DIR)/fake_hacking.sh
+	@cp $(MATRIX_DIR)/main.sh $(BIN_DIR)/matrix.sh
 	@echo "Installation completed."
 
 # Run on Linux
 run-linux: 
 	@echo "Running Dtrix on Linux..."
-	@mkdir -p $(BIN_DIR)
-	@# Source configuration file
 	@source $(LINUX_DIR)/linux_dtrix.cfg
-	@$(RUN_COMMAND) $(EXTRA_OPTIONS)
+	@$(run_command) $(extra_options)
 	@echo "Dtrix run on Linux completed."
 
 # Run on Termux
 run-termux:
 	@echo "Running Dtrix on Termux..."
-	@mkdir -p $(BIN_DIR)
-	@# Source configuration file
 	@source $(TERMUX_DIR)/termux-dtrix.cfg
-	@$(RUN_COMMAND) $(EXTRA_OPTIONS)
+	@$(run_command) $(extra_options)
 	@echo "Dtrix run on Termux completed."
 
 # Clean target
