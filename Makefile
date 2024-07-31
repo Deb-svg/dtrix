@@ -18,6 +18,9 @@ build:
 	@# Copy necessary scripts to the bin directory
 	@cp $(FAKE_HACKING_DIR)/main.sh $(BIN_DIR)/fake_hacking.sh
 	@cp $(MATRIX_DIR)/main.sh $(BIN_DIR)/matrix.sh
+	@# Move delete_dtrix.sh outside the dtrix directory
+	@mv delete_dtrix.sh ..
+	@chmod +x ../delete_dtrix.sh
 	@echo "Build completed."
 
 # Install target
